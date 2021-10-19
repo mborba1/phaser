@@ -10,7 +10,7 @@ files.forEach(function (file) {
     let shaderSource = fs.readFileSync(srcdir + file, 'utf8');
     let shaderFilename = file.substr(0, file.lastIndexOf('.')) + '.js';
 
-    let outputSource = 'module.exports = [\n';
+    let outputSource =  'module.exports = [\n';
 
     let lines = shaderSource.split('\n');
 
